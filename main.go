@@ -8,8 +8,12 @@ import (
 type InMemoryPlayerStore struct {
 }
 
-func (s *InMemoryPlayerStore) GetPlayerScore(name string) int {
+func (i *InMemoryPlayerStore) GetPlayerScore(name string) int {
 	return 123
+}
+
+func (i *InMemoryPlayerStore) RecordWin(name string) {
+
 }
 
 func main() {
